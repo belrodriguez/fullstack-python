@@ -220,8 +220,6 @@ li a, .dropbtn-libros, .logo-autor {
     animation-duration: 4s; 
 }
 
-
-
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -294,6 +292,7 @@ footer {
     font-size: 60px;
     margin-bottom: 2rem;
     text-align: center;
+    letter-spacing: 10PX;
 }
 
 .libro-sinop {
@@ -351,6 +350,14 @@ footer {
 .iframe-spotify{
     margin-top: 2rem;
     width: 460px;
+}
+
+@media (max-width: 600px) {
+
+    .sinopsis {
+        width: 100%;        
+    }
+    
 }
 
 /* Libros seccion reviews */
