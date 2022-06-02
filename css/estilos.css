@@ -352,19 +352,33 @@ footer {
     width: 460px;
 }
 
-@media (max-width: 600px) {
-
-    .sinopsis {
-        width: 100%;        
-    }
-    
-}
 
 /* Libros seccion reviews */
 
+.review-text1, .review-text2 {
+    font-size: 13px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    text-align: justify;
+    font-style: oblique;
+}
+
+.review-text1 {
+    grid-area: rev-text1;
+}
+
+.review-text2 {
+    grid-area: rev-text2;
+}
+
+.reviewer {
+    font-size: 16px;
+    text-align: right;
+}
+
 .review-lista {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'rev-text1  rev-text2';
     grid-gap: 4.56rem;
 }
 
@@ -373,17 +387,33 @@ footer {
     font-weight: 400;
 }
 
-.review-text {
-    font-size: 13px;
-    margin-bottom: 10px;
-    line-height: 1.4;
-    text-align: justify;
-    font-style: oblique;
-}
+/* Media queries libro1.html */
 
-.reviewer {
-    font-size: 16px;
-    text-align: right;
+@media (max-width: 728px) {
+
+    /* libro 1 */
+
+    .sinopsis {
+        width: 100%;        
+    }
+
+    .padding-rl {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .libro-imagen {
+        width: 100%;
+    }
+    
+    /* reviews */
+
+    .review-lista {
+        grid-template-areas: 
+        'rev-text1'
+        'rev-text2';
+    }
+
 }
 
 /* About me */
