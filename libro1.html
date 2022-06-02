@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Libro 1</title>
+</head>
+<body>
+    <header>
+        <a class="logo-autor" href="index.html">
+            El AutoR
+        </a>
+        <nav>            
+            <div class="nav-links" >
+                <ul id="myNavLinks">
+                     <li><a href="index.html">Inicio</a></li>
+                     <div class="dropdown-libros">
+                     <li> <button class="dropbtn-libros">Libros
+                          </button>
+                          <div class="dropd-content-libros">
+                              <a href="libro1.html"> <img src="imagenes/libro1.jpg" alt="Portada libro 1"> Libro 1</a>
+                              <a href="#"> <img src="imagenes/libro2.jpg" alt="Portada libro 2"> Libro 2</a>
+                              <a href="#"> <img src="imagenes/libro3.jpg" alt="Portada libro 3"> Libro 3</a>
+                              <a href="#"> <img src="imagenes/libro4.jpg" alt="Portada libro 4"> Libro 4</a>
+                          </div>
+                     </li>
+                     </div>                     
+                     <li><a href="about.html">Sobre Mi</a></li>
+                     <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+        <div class="libro-container padding-rl padding-tb">
+            <div class="libro-main">
+                <section class="libro-sinop padding-tb">
+                    <div class="libro-imagen">
+                        <img src="imagenes/libro1.jpg" alt="Imagen de portada del libro 1">
+                    </div>
+                    <div class="sinopsis">
+                        <h3 class="seccion-titulo">Titulo Libro 1</h3>
+                        <div class="sinop-container">
+                            <h4 class="h4-heading">Sinopsis</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit leo a ex maximus tincidunt. Cras hendrerit non arcu quis sollicitudin. Quisque lobortis urna a augue facilisis, vitae semper dui convallis. Quisque et eros aliquet, tincidunt ex at, volutpat lectus. Phasellus euismod scelerisque elementum. Donec maximus, ante quis facilisis cursus, ex mauris rhoncus velit, in scelerisque eros mauris at arcu. Nullam porttitor eros sed nulla sollicitudin pretium.</p>
+                        </div>
+                        <div class="spotify">
+                            <h4 class="h4-spotify h4-heading">Disfrute de la playlist armada especialmente para este libro</h4>
+                        </div>
+
+                        <div class="iframe-spotify">
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1NeELYrxr2fBVK3g0bTqOz?utm_source=generator&theme=0" width="100%" height="230" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        </div>
+                    </div>
+                </section>
+                <section class="reviews padding-rl padding-tb">
+                    <h4 class="h4-heading">Reseñas</h4>
+                    <ul class="review-lista">
+                        <li>
+                            <p class="review-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit leo a ex maximus tincidunt. Cras hendrerit non arcu quis sollicitudin. Quisque lobortis urna a augue facilisis, vitae semper dui convallis. Quisque et eros aliquet, tincidunt ex at, volutpat lectus. Phasellus euismod scelerisque elementum. Donec maximus, ante quis facilisis cursus, ex mauris rhoncus velit, in scelerisque eros mauris at arcu. Nullam porttitor eros sed nulla sollicitudin pretium."</p>
+                            <p class="reviewer">-Juan Perez</p>
+                        </li>
+                        <li>
+                            <p class="review-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit leo a ex maximus tincidunt. Cras hendrerit non arcu quis sollicitudin. Quisque lobortis urna a augue facilisis, vitae semper dui convallis. Quisque et eros aliquet, tincidunt ex at, volutpat lectus. Phasellus euismod scelerisque elementum. "</p>
+                            <p class="reviewer">-Ana Gomez</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    
+    
+    <footer>
+        <div class="copyright">
+            <p>@ElAutor 2022. Todos los derechos reservados.</p>
+        </div>
+        <div class="socials">
+            <ul>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </footer>    
+    <script src="js/main.js"></script>
+</body>
+</html>
