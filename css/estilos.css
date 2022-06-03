@@ -432,6 +432,7 @@ footer {
 
 /* Media Queries */
 
+
 @media screen and (max-width: 728px) {
 
     body {
@@ -552,7 +553,7 @@ footer {
     }
     
     .iframe-spotify {
-        width: 315px;
+        width: fit-content;
     }
 
 
@@ -689,11 +690,6 @@ footer {
         width: 100%;
     }
     
-    .iframe-spotify {
-        width: 460px;
-    }
-
-
     /* reviews */
 
     .review-lista {
