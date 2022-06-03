@@ -13,10 +13,11 @@ body {
 }
 
 img {
-    width:100%;   
+    width: 100%;   
     object-fit: cover;
     vertical-align: middle;
 }
+
 
 /* Bootstrap */
 
@@ -31,7 +32,8 @@ img {
 }
 
 .box-text-img {
-    display: flex;
+    display: grid;
+    grid-template-areas: 'contacto-p contacto-img';
     margin-top: 1.5rem;
 }
 
@@ -39,13 +41,13 @@ img {
     font-size: 1.1rem;
     text-indent: 1rem;
     margin-bottom: 0!important;
-    padding: 15px;
-    width: 60%;
-    line-height: 1.9rem;    
+    padding: 15px;    
+    line-height: 1.9rem;
+    grid-area: contacto-p; 
+    width: 50%;   
 }
 
-.img-bootstrap {
-    width: 40%;
+.img-bootstrap {   
     filter: grayscale(1);
     box-shadow: #000 0px 0px 40px;
     border-radius: 25px;
@@ -53,6 +55,8 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.7;
+    grid-area: contacto-img;
+    width: 50%;
 }
 
 #mensajes, .form-control, .form-select, p {
@@ -95,9 +99,9 @@ header {
     justify-content: space-around;
     width: 100%;
     align-items: center;
-    height: 70px;
-    position: relative;
+    height: 70px;    
     top: 0;
+    position: static;
 }
 
 /* -- Logo -- */
@@ -184,6 +188,8 @@ li a, .dropbtn-libros, .logo-autor {
     display: block;
 }
 
+
+
 /* -- Contenido principal index -- */
 
 .main-img {       
@@ -240,7 +246,8 @@ footer {
     width: 100%;
     align-items: center;
     height: 60px;
-    bottom: 0;    
+    bottom: 0;
+    position: static;    
 }
 
 .copyright {
@@ -387,34 +394,6 @@ footer {
     font-weight: 400;
 }
 
-/* Media queries libro1.html */
-
-@media (max-width: 728px) {
-
-    /* libro 1 */
-
-    .sinopsis {
-        width: 100%;        
-    }
-
-    .padding-rl {
-        padding-left: 0rem;
-        padding-right: 0rem;
-    }
-
-    .libro-imagen {
-        width: 100%;
-    }
-    
-    /* reviews */
-
-    .review-lista {
-        grid-template-areas: 
-        'rev-text1'
-        'rev-text2';
-    }
-
-}
 
 /* About me */
 
@@ -452,4 +431,61 @@ footer {
     font-size: 1.2rem;
     text-align: justify;
     text-indent: 1rem;    
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 728px) {
+
+   /* sobre mi */
+
+   .contenedor-about h2 {
+       font-size: 3.5rem;
+       text-align: center;
+       margin-bottom: 0rem;
+   }
+
+   .contenedor-flex {
+       padding: 5%;
+   }
+
+   .img-about {
+       width: 100%;
+       
+   }
+
+   .texto-about {
+       width: 100%;
+       margin-top: 3rem;
+   }
+
+
+    /* libro 1 */
+
+    .libro-main {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .sinopsis {
+        width: 100%;        
+    }
+
+    .padding-rl {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .libro-imagen {
+        width: 100%;
+    }
+    
+    /* reviews */
+
+    .review-lista {
+        grid-template-areas: 
+        'rev-text1'
+        'rev-text2';
+    }
+
 }
