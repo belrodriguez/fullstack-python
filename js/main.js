@@ -15,6 +15,7 @@ $("#tipoMensaje").change(function() {
 
 
 /* Animacion tipo maquina de escribir para index */
+/* Fuente: https://css-tricks.com/snippets/css/typewriter-effect/ */
 
 var aText = new Array(
 "Hola, soy El Autor."

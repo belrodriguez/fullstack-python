@@ -72,7 +72,7 @@ img {
 
 /* -- Font General Nav, Footer, Lists -- */
 
-.logo-autor, li a, footer, li, ul, .dropbtn-libros{
+.logo-autor a, li a, footer, li, ul, .dropbtn-libros{
     font-family: 'Amatic SC', cursive;
     color: rgb(250, 249, 246);
     text-decoration: none;
@@ -121,7 +121,7 @@ header {
 }
 
 li a, .dropbtn-libros, .logo-autor {    
-    margin: 10px;
+    margin: 7px;
     padding: 5px;
     font-weight: 500;
     transition: 0.2s;    
@@ -434,12 +434,27 @@ footer {
 
 @media screen and (max-width: 728px) {
 
+
     body {
-        height: 125vh;
-        width: 137vw;
+        width: auto;
     }
 
     /* navbar */
+
+    header {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .nav-links {
+        height: 50%;
+        width: 100%;
+    }
+
+    .nav-links ul {
+        padding-left: 0rem!important;
+        justify-content: space-evenly;
+    }
 
     li a, .logo-autor {
         margin: 0px;
@@ -449,6 +464,8 @@ footer {
     .logo-autor {
         font-size: 27px;
         text-align: center;
+        height: 50%;
+        margin-top: 0.5rem;
     }
 
     li a, .dropbtn-libros {
@@ -456,25 +473,27 @@ footer {
     }
 
     li {
-        padding: 9px;
+        padding: 5px;
     }
 
     .dropbtn-libros, .dropdown-libros {
         padding: 0px!important;
     }
 
+    /* footer */
+
+    .copyright p {
+        padding-left: 1rem;
+    }
+
     /* index*/
 
     .saludo-inicial {
-        margin-top: 2.5rem;
-        margin-bottom: 1.5rem;                
+        margin-top: 3rem;
+        margin-bottom: 0.5rem;                
     }
 
     /* contacto */
-
-    .container {
-        height: 100vh;
-    }
 
     .jumbotron {        
         margin-bottom: 2.5rem;
@@ -532,12 +551,18 @@ footer {
         width: 100%;
     }
     
+    .iframe-spotify {
+        width: 315px;
+    }
+
+
     /* reviews */
 
     .review-lista {
         grid-template-areas: 
         'rev-text1'
         'rev-text2';
+        grid-gap: 2.56rem;
     }
 
 }

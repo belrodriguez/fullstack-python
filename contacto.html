@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,9 +17,11 @@
 </head>
 <body>
     <header>
-        <a class="logo-autor" href="index.html">
+        <div class="logo-autor">
+        <a href="index.html">
             El AutoR
-        </a>          
+        </a> 
+        </div>           
             <div class="nav-links" >
                 <ul id="myNavLinks">
                      <li><a href="index.html">Inicio</a></li>
@@ -51,7 +53,7 @@
         <form class="row g-3">
             <div class="col-md-6">
                 <label for="firstName" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="firstName" required>
+                <input type="text" class="form-control" id="firstName"  required  oninvalid="this.setCustomValidity('Por favor complete su nombre (no es necesario su apellido)')" oninput="setCustomValidity('')">
             </div>
             <div class="col-md-6">
                 <label for="lastName" class="form-label">Apellido</label>
@@ -59,11 +61,11 @@
             </div>
             <div class="col-md-8">
                 <label for="emailInfo" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="emailInfo" required>
+                <input type="email" class="form-control" id="emailInfo" required oninvalid="this.setCustomValidity('Por favor complete su email.')" oninput="setCustomValidity('')">
             </div>            
             <div class="col-md-8">
                 <label for="tipoMensaje" class="form-label">¿Qué mensaje quiere dejarle al Autor?</label>
-                <select class="form-select" id="tipoMensaje" required>
+                <select class="form-select" id="tipoMensaje" required oninvalid="this.setCustomValidity('Seleccion un mensaje para dejarle al Autor')" oninput="setCustomValidity('')">
                     <option selected></option>
                     <option value="1">Saludo</option>
                     <option value="2">Reseña de libro</option>
@@ -72,22 +74,25 @@
             </div>
             <div class="col-md-8" id="reviewLibros">
                 <label for="reviewMensaje" class="form-label">¿De qué libro le gustaria dejar una reseña?</label>
-                <select class="form-select" id="reviewMensaje" required>
+                <select class="form-select" id="reviewMensaje" required oninvalid="this.setCustomValidity('Seleccione un libro de la lista')" oninput="setCustomValidity('')">
                     <option selected></option>
                     <option value="1">Libro 1</option>
                     <option value="2">Libro 2</option>
                     <option value="3">Libro 3</option>
+                    <option value="4">Libro 4</option>
                   </select>
             </div>
             <div class="col-md-12">
                 <label for="mensajes" class="form-label">Deje su mensaje</label>
-                <textarea class="form-control" id="mensajes" rows="5" required></textarea>
+                <textarea class="form-control" id="mensajes" rows="5" maxlength="500" minlength="6" required oninvalid="this.setCustomValidity('El mensaje debe tener mas de 6 caracteres para que El Autor pueda apreciarlo.')" oninput="setCustomValidity('')"></textarea>
             </div>
             <div class="col-md-12">
-                <button type="submit" class="btn-lg btn-basic">Enviar</button>
-            </div>
+                <button type="submit" class="btn-lg btn-basic">Enviar</button>        
+            </div>                  
         </form>
-    </div>
+   </div>
+   
+  </div>      
     <footer>
         <div class="copyright">
             <p>@ElAutor 2022. Todos los derechos reservados.</p>
