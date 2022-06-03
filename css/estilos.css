@@ -434,11 +434,14 @@ footer {
 
 @media screen and (max-width: 728px) {
 
+<<<<<<< HEAD
 
     body {
         width: auto;
     }
 
+=======
+>>>>>>> 5bc73e649a3c3a9c729d0c361107abcae0c3c4b9
     /* navbar */
 
     header {
@@ -480,17 +483,24 @@ footer {
         padding: 0px!important;
     }
 
+<<<<<<< HEAD
     /* footer */
 
     .copyright p {
         padding-left: 1rem;
     }
+=======
+>>>>>>> 5bc73e649a3c3a9c729d0c361107abcae0c3c4b9
 
     /* index*/
 
     .saludo-inicial {
         margin-top: 3rem;
+<<<<<<< HEAD
         margin-bottom: 0.5rem;                
+=======
+        margin-bottom: 1.5rem;                
+>>>>>>> 5bc73e649a3c3a9c729d0c361107abcae0c3c4b9
     }
 
     /* contacto */
