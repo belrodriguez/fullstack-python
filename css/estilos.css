@@ -434,11 +434,6 @@ footer {
 
 @media screen and (max-width: 728px) {
 
-    body {
-        height: 125vh;
-        width: 137vw;
-    }
-
     /* navbar */
 
     li a, .logo-autor {
@@ -463,18 +458,15 @@ footer {
         padding: 0px!important;
     }
 
+
     /* index*/
 
     .saludo-inicial {
-        margin-top: 2.5rem;
+        margin-top: 3rem;
         margin-bottom: 1.5rem;                
     }
 
     /* contacto */
-
-    .container {
-        height: 100vh;
-    }
 
     .jumbotron {        
         margin-bottom: 2.5rem;
