@@ -120,14 +120,14 @@ header {
     text-align: center;    
 }
 
-li a, .dropbtn-libros, .logo-autor {    
+li a, .dropbtn-libros, .logo-autor a {    
     margin: 7px;
     padding: 5px;
     font-weight: 500;
     transition: 0.2s;    
 }
 
-.logo-autor:hover {
+.logo-autor a:hover {
     color: dimgray;
     font-weight: 700;
     letter-spacing: 20px;
@@ -191,7 +191,7 @@ li a, .dropbtn-libros, .logo-autor {
 
 .main-img {       
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;     
     align-items: center;
     flex-direction: column;    
@@ -434,7 +434,6 @@ footer {
 
 @media screen and (max-width: 728px) {
 
-
     body {
         width: auto;
     }
@@ -514,6 +513,7 @@ footer {
        font-size: 3.5rem;
        text-align: center;
        margin-bottom: 0rem;
+       margin-left: 0rem;
    }
 
    .contenedor-flex {
@@ -564,5 +564,144 @@ footer {
         'rev-text2';
         grid-gap: 2.56rem;
     }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    
+    body {
+        width: auto;
+        height: auto;
+    }
+
+    /* navbar */
+
+    header {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .nav-links {
+        height: 50%;
+        width: 100%;
+    }
+
+    .nav-links ul {
+        padding-left: 0rem!important;
+        justify-content: space-evenly;
+    }
+
+    li a, .logo-autor {
+        margin: 0px;
+        padding: 0;
+    }
+
+    .logo-autor {
+        font-size: 33px;
+        text-align: center;
+        height: 50%;
+        margin-top: 0.5rem;
+    }
+
+    li a, .dropbtn-libros {
+        font-size: 27px;
+    }
+
+    li {
+        padding: 5px;
+    }
+
+    .dropbtn-libros, .dropdown-libros {
+        padding: 0px!important;
+    }
+
+    /* footer */
+
+    .copyright p {
+        padding-left: 1rem;
+    }
+
+    /* index*/
+
+    .saludo-inicial {
+        margin-top: 3rem;
+        margin-bottom: 0.5rem;                
+    }
+
+    /* contacto */
+
+    .jumbotron {        
+        margin-bottom: 2.5rem;
+    }
+
+    .box-text-img p{
+        width: 100%;       
+    }
+
+    .img-bootstrap {
+       visibility: hidden;
+       width: 0%;       
+    }
+
+    /* sobre mi */
+
+   .contenedor-about h2 {
+       font-size: 3rem;
+       text-align: center;
+       margin-bottom: 0rem;
+       margin-left: 0rem;
+       padding: 1rem;
+   }
+
+   .contenedor-flex {
+       padding: 5%;
+   }
+
+   .img-about {
+       width: 100%;
+       
+   }
+
+   .texto-about {
+       width: 100%;
+       margin-top: 3rem;
+   }
+
+
+    /* libro 1 */
+
+    .libro-main {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .sinopsis {
+        width: 100%;        
+    }
+
+    .padding-rl {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .libro-imagen {
+        width: 100%;
+    }
+    
+    .iframe-spotify {
+        width: 460px;
+    }
+
+
+    /* reviews */
+
+    .review-lista {
+        grid-template-areas: 
+        'rev-text1'
+        'rev-text2';
+        grid-gap: 2.56rem;
+    }
+
 
 }
